@@ -1,0 +1,20 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "FirstSteps of RX",
+  "main": "index.js",
+  "dependencies": {
+    "rx": "^4.0.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2"
+  },
+  "scripts": {
+    "test": "run"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "EminH",
+  "license": "ISC"
+}
