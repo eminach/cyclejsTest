@@ -1,0 +1,1 @@
+browserify index.js -o build/index.js -t [ babelify --presets [ es2015 ] ]

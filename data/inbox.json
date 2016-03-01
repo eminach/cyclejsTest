@@ -1,0 +1,143 @@
+{
+  "items": [
+    {
+      "itemid": 1,
+      "type": "textcontent",
+      "icon": "http://teuis.net/images/ilkinqey.png",
+      "title": "İLKİN QEYDİYYAT",
+      "status": [
+        {
+          "id": "1",
+          "title": "QEYDİYYATA ALINMIŞ",
+          "selected": true
+        },
+        {
+          "id": "2",
+          "title": "ARAYIŞ VERİLMİŞ",
+          "selected": false
+        },
+        {
+          "id": "3",
+          "title": "GƏBUL EDİLMİŞ",
+          "selected": false
+        },
+        {
+          "id": "4",
+          "title": "MÜQAVİLƏ QUVVƏYA MİNDİRİLMİŞ",
+          "selected": false
+        }
+      ],
+      "description": "",
+      "url": "http://teuis.net/project/doSomething?do=784&access_token=465a1d54asd51as45f564",
+      "user": {
+        "id": 123141,
+        "username": "arifacar",
+        "name": "Arif",
+        "surname": "Acar",
+        "title": "Developer",
+        "department": "IT Information",
+        "expertise": [
+          "Java",
+          "DB Management",
+          "Javascript",
+          "PHP",
+          "Open Source"
+        ],
+        "phone": "+905345224388"
+      },
+      "assingfrom": 1,
+      "assingdate": "16.01.2016 16:01"
+    },
+    {
+      "itemid": 2,
+      "type": "mapcontent",
+      "icon": "http://teuis.net/images/mapcont.png",
+      "title": "TEXNİKİ PASSPORTUN VERİLMESİ",
+      "status": [
+        {
+          "id": "1",
+          "title": "QEYDİYYATA ALINMIŞ",
+          "selected": false
+        },
+        {
+          "id": "2",
+          "title": "ARAYIŞ VERİLMİŞ",
+          "selected": true
+        },
+        {
+          "id": "3",
+          "title": "GƏBUL EDİLMİŞ",
+          "selected": false
+        },
+        {
+          "id": "4",
+          "title": "MÜQAVİLƏ QUVVƏYA MİNDİRİLMİŞ",
+          "selected": false
+        }
+      ],
+      "description": "",
+      "url": "http://teuis.net/project/doSomething?do=78124&access_token=21c32ca4ghat2342d23fd23kj",
+      "user": {
+        "id": 123141,
+        "username": "ciceklelmodova",
+        "name": "ÇİÇEK",
+        "surname": "LƏLMODOVA",
+        "title": "TDİTDA",
+        "department": "EMD Lab",
+        "expertise": [
+          "Java",
+          "Lab Developer",
+          "Sample Expert"
+        ],
+        "phone": "+993501236547"
+      },
+      "assingfrom": 23,
+      "assingdate": "16.01.2016 16:21"
+    },
+    {
+      "itemid": 1,
+      "type": "textcontent",
+      "icon": "http://teuis.net/images/textpt.png",
+      "title": "İLKİN QEYDİYYAT",
+      "status": [
+        {
+          "id": "1",
+          "title": "QEYDİYYATA ALINMIŞ",
+          "selected": false
+        },
+        {
+          "id": "1",
+          "title": "ARAYIŞ VERİLMİŞ",
+          "selected": false
+        },
+        {
+          "id": "1",
+          "title": "GƏBUL EDİLMİŞ",
+          "selected": true
+        },
+        {
+          "id": "1",
+          "title": "MÜQAVİLƏ QUVVƏYA MİNDİRİLMİŞ",
+          "selected": false
+        }
+      ],
+      "description": "",
+      "url": "http://teuis.net/project/doSomething?do=4&access_token=213adds23d51as45f564",
+      "user": {
+        "id": 5245,
+        "username": "arifacar",
+        "name": "MENEKŞE",
+        "surname": "ƏLİYEV",
+        "title": "DEDRX",
+        "department": "Kadastro",
+        "expertise": [
+          "Lab Expert",
+          "Lab. Sample Analyser"
+        ],
+        "phone": "+993502145698"
+      },
+      "assingfrom": 432,
+      "assingdate": "16.01.2016 12:01"
+    }
+  ]
+}
