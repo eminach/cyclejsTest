@@ -111,24 +111,37 @@ var _Rx2 = _interopRequireDefault(_Rx);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function main(sources) {
-  var ITEMS_URL = 'http://jsonplaceholder.typicode.com/comments'; //'http://localhost:3000/items';
-  var getItems$ = _Rx2.default.Observable.of({
-    url: ITEMS_URL,
-    method: 'GET'
+  var ITEMS_URL = 'http://localhost:3000/items';
+  //const getItems$ = Rx.Observable
+  // .of({
+  //   url: ITEMS_URL,
+  //  method: 'GET'
+  //});
+  var searchRequest$ = sources.DOM.select('.form-control').events('input').debounce(500).map(function (ev) {
+    return ev.target.value;
+  }).filter(function (query) {
+    return query.length > 0;
+  }).map(function (q) {
+    return {
+      url: ITEMS_URL + '?q=' + encodeURI(q)
+    };
   });
 
+  //category: 'github',
   var item$ = sources.HTTP.filter(function (res$) {
     return res$.request.url.indexOf(ITEMS_URL) === 0;
   }).mergeAll().map(function (res) {
-    return res;
-  }).startWith('Loading..');
-  var vtree$ = item$.map(function (item) {
-    return (0, _dom.div)(item.body);
+    return JSON.parse(res.text);
+  }).startWith([]);
+  var vtree$ = item$.map(function (allItems) {
+    return (0, _dom.div)([(0, _dom.label)('Search:'), (0, _dom.input)({ className: 'form-control', attributes: { type: 'text' } }), (0, _dom.button)({ className: 'btn' }, 'Get all'), (0, _dom.hr)(), (0, _dom.table)('.table .table-bordered', (0, _dom.thead)([(0, _dom.tr)([(0, _dom.th)('Title', 'Description')])]), allItems.map(function (item) {
+      return (0, _dom.tbody)([(0, _dom.tr)([(0, _dom.td)(item.title), (0, _dom.td)(item.description)])]);
+    }))]);
   });
 
   var sinks = {
     DOM: vtree$,
-    HTTP: getItems$
+    HTTP: searchRequest$.startWith({ url: ITEMS_URL })
   };
   return sinks;
 }
